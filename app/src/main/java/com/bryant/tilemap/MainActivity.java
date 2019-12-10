@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity{
         aMap.getUiSettings().setZoomControlsEnabled(false);// 缩放按钮是否显示
         aMap.getUiSettings().setRotateGesturesEnabled(false);// 倾斜手势是否可用
         aMap.moveCamera(CameraUpdateFactory.zoomTo(18));//缩放级别
-        aMap.showMapText(false);//不显示位置名称
+        aMap.showMapText(false);//不显示位置名称，因为谷歌瓦片图层已经有热点标注
         aMap.getUiSettings().setLogoBottomMargin(50);//设置LOGO底部的距离
         aMap.getUiSettings().setLogoLeftMargin(50);//设置LOGO左边的距离
         LatLng latLng = new LatLng(25.8597028368,114.8968382763);
