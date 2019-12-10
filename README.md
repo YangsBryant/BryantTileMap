@@ -24,6 +24,10 @@ android使用谷歌地图(Android uses Google Maps)，利用高德地图加载�
 请在AndroidManifest.xml的application节点下添加android:networkSecurityConfig="@xml/network_security_config"
 否则无法访问谷歌瓦片图层
 
+## 关于MCodeCheck.apk
+可以获取SHA1序列号，很多第三平台会用到 
+[软件下载地址](https://raw.githubusercontent.com/YangsBryant/BryantTileMap/master/MCodeCheck.apk)
+
 ## 主要代码
 ```java
 public class MainActivity extends AppCompatActivity{
