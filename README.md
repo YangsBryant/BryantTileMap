@@ -16,7 +16,7 @@ android使用谷歌地图(Android uses Google Maps)，利用高德地图加载�
 
 1.谷歌地图分辨率稍有模糊
 
-2.谷歌地图的热点信息比高德地图少很多
+2.谷歌地图的热点标注比高德地图少很多
 
 3.加载谷歌瓦片图层略慢，并且可以看到底层
 
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity{
 }
 ```
 
-## activity_main
+## 布局文件
 ```java
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
