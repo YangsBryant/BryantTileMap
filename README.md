@@ -10,7 +10,7 @@ android使用谷歌地图(Android uses Google Maps)，利用高德地图加载�
 
 1.解决android端需要翻墙才能使用谷歌地图
 
-2.可以使用高德的任何API，比如搜索，Marker标注，路线标注
+2.可以使用高德的任何API
 
 ## BryantTileMap的缺点
 
@@ -23,6 +23,10 @@ android使用谷歌地图(Android uses Google Maps)，利用高德地图加载�
 ## 关于网络安全配置
 请在AndroidManifest.xml的application节点下添加android:networkSecurityConfig="@xml/network_security_config"
 否则无法访问谷歌瓦片图层
+
+## 关于MCodeCheck.apk
+可以获取SHA1序列号，很多第三平台会用到 
+[软件下载地址](https://raw.githubusercontent.com/YangsBryant/BryantTileMap/master/MCodeCheck.apk)
 
 ## 主要代码
 ```java
@@ -120,3 +124,4 @@ public class MainActivity extends AppCompatActivity{
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+## 联系QQ：961606042
