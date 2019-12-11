@@ -1,7 +1,7 @@
 # BryantTileMap
 android使用谷歌地图(Android uses Google Maps)，利用高德地图加载谷歌瓦片图层(Loading Google tile layer with Gaud map)
 
-
+![这是一张图片](https://github.com/YangsBryant/BryantTileMap/blob/master/62c1258923ed591f992b6c0953ea019f.gif)
 
 ## 使用方式
 对接高德地图，利用核心代码加载谷歌瓦片图层
