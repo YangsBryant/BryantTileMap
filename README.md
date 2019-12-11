@@ -10,7 +10,7 @@ android使用谷歌地图(Android uses Google Maps)，利用高德地图加载�
 
 1.解决android端需要翻墙才能使用谷歌地图
 
-2.可以使用高德的任何API，比如搜索，Marker标注，路线标注
+2.可以使用高德的任何API
 
 ## BryantTileMap的缺点
 
