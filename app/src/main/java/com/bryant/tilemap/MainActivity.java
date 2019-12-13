@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         aMap.getUiSettings().setLogoLeftMargin(50);//设置LOGO左边的距离
 
         //设置自定义瓦片中心点
-        double[] central = getCentralLatLng(new LatLng(25.246254745730973, 115.02752709100358),new LatLng(25.2297424864891, 115.00983818939284));
+        double[] central = getCentralLatLng(new LatLng(**, **),new LatLng(**,**));
         LatLng latLng = new LatLng(central[0], central[1]);
         aMap.moveCamera(CameraUpdateFactory.changeLatLng(latLng));
 
@@ -92,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
                         ​s：卫星图
                         y：带标签的卫星图
 ​                        h：标签层（路名、地名等）*/
-                        String url = tileUrl + "lyrs=y@167000000&hl=zh-CN&gl=cn&x=" + x + "&y=" + y + "&z=" + zoom + "&s=Galil.png";
+                        String url = tileUrl + "lyrs=y@167000000&hl=zh-CN&gl=cn&x=" + x + "&y=" + y + "&z=" + zoom +             
+                                     "&s=Galil.png";
                         return new URL(url);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -109,14 +110,14 @@ public class MainActivity extends AppCompatActivity {
                 public URL getTileUrl(int x, int y, int zoom) {
                     try {
                         //获取自定义瓦片图中心的经纬度
-                        double[] central = getCentralLatLng(new LatLng(25.246254745730973, 115.02752709100358),new LatLng(25.2297424864891, 115.00983818939284));
+                        double[] central = getCentralLatLng(new LatLng(**, **),new LatLng(**,**));
                         //判断瓦片图中心的经纬度是否是在屏幕内的经纬，从而获取id
                         if(getLat().contains(new LatLng(central[0],central[1]))){
                             //Y轴矫正公式
                             int y2 = (int) (Math.pow(2, zoom) - y - 1);
                             //自定义瓦片图的地址
-                            String url = "https://tile-orchard.oss-cn-shenzhen.aliyuncs.com/"
-                                    + 1 + "/" + zoom + "/" + x + "/" + y2 + ".png";
+                            String url = "https://******/"
+                                    + 瓦片id + "/" + zoom + "/" + x + "/" + y2 + ".png";
                             return new URL(url);
                         }
                     } catch (Exception e) {
